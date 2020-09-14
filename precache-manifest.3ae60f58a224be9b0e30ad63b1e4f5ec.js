@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0a35d47893b618d95464e22bbc5f06d8",
+    "revision": "2388d70db5798bd981c0de7d53167987",
     "url": "/Janna/index.html"
   },
   {
-    "revision": "34c335031b34457b1ab3",
+    "revision": "318ff79ae4ad7064a76f",
     "url": "/Janna/static/css/main.4117dc3b.chunk.css"
   },
   {
-    "revision": "7d6a0787ddd02e2c284b",
-    "url": "/Janna/static/js/2.a3698491.chunk.js"
+    "revision": "40ad280cc92dc01be2e8",
+    "url": "/Janna/static/js/2.daab43b5.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Janna/static/js/2.a3698491.chunk.js.LICENSE.txt"
+    "url": "/Janna/static/js/2.daab43b5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "34c335031b34457b1ab3",
-    "url": "/Janna/static/js/main.0ee8ead0.chunk.js"
+    "revision": "318ff79ae4ad7064a76f",
+    "url": "/Janna/static/js/main.eb9fe820.chunk.js"
   },
   {
     "revision": "6b8865c0a2a4be59827b",
@@ -38,5 +38,21 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "55a517daef50ad2965fb5843f5db7fa2",
     "url": "/Janna/static/media/kiss4.55a517da.m4a"
+  },
+  {
+    "revision": "3528eb4dc284a354b6f1bdfbb7429f28",
+    "url": "/Janna/static/media/kiss5.3528eb4d.m4a"
+  },
+  {
+    "revision": "c2760e0945fc84fddac9f2b53fa0e472",
+    "url": "/Janna/static/media/kiss6.c2760e09.m4a"
+  },
+  {
+    "revision": "f253bbf0dfb1fcd516606cd172c8c4a9",
+    "url": "/Janna/static/media/kiss7.f253bbf0.m4a"
+  },
+  {
+    "revision": "8f1a8daabd502bbaa742a168ebe9f73a",
+    "url": "/Janna/static/media/kiss8.8f1a8daa.m4a"
   }
 ]);

@@ -1,26 +1,30 @@
 {
   "files": {
     "main.css": "/Janna/static/css/main.4117dc3b.chunk.css",
-    "main.js": "/Janna/static/js/main.0ee8ead0.chunk.js",
-    "main.js.map": "/Janna/static/js/main.0ee8ead0.chunk.js.map",
+    "main.js": "/Janna/static/js/main.eb9fe820.chunk.js",
+    "main.js.map": "/Janna/static/js/main.eb9fe820.chunk.js.map",
     "runtime-main.js": "/Janna/static/js/runtime-main.79d48003.js",
     "runtime-main.js.map": "/Janna/static/js/runtime-main.79d48003.js.map",
-    "static/js/2.a3698491.chunk.js": "/Janna/static/js/2.a3698491.chunk.js",
-    "static/js/2.a3698491.chunk.js.map": "/Janna/static/js/2.a3698491.chunk.js.map",
+    "static/js/2.daab43b5.chunk.js": "/Janna/static/js/2.daab43b5.chunk.js",
+    "static/js/2.daab43b5.chunk.js.map": "/Janna/static/js/2.daab43b5.chunk.js.map",
     "index.html": "/Janna/index.html",
-    "precache-manifest.ed34a597791ea17cafcf5e3b5866e0c0.js": "/Janna/precache-manifest.ed34a597791ea17cafcf5e3b5866e0c0.js",
+    "precache-manifest.3ae60f58a224be9b0e30ad63b1e4f5ec.js": "/Janna/precache-manifest.3ae60f58a224be9b0e30ad63b1e4f5ec.js",
     "service-worker.js": "/Janna/service-worker.js",
     "static/css/main.4117dc3b.chunk.css.map": "/Janna/static/css/main.4117dc3b.chunk.css.map",
-    "static/js/2.a3698491.chunk.js.LICENSE.txt": "/Janna/static/js/2.a3698491.chunk.js.LICENSE.txt",
+    "static/js/2.daab43b5.chunk.js.LICENSE.txt": "/Janna/static/js/2.daab43b5.chunk.js.LICENSE.txt",
     "static/media/kiss1.m4a": "/Janna/static/media/kiss1.de2d11ff.m4a",
     "static/media/kiss2.m4a": "/Janna/static/media/kiss2.19e706c9.m4a",
     "static/media/kiss3.m4a": "/Janna/static/media/kiss3.66ce72ae.m4a",
-    "static/media/kiss4.m4a": "/Janna/static/media/kiss4.55a517da.m4a"
+    "static/media/kiss4.m4a": "/Janna/static/media/kiss4.55a517da.m4a",
+    "static/media/kiss5.m4a": "/Janna/static/media/kiss5.3528eb4d.m4a",
+    "static/media/kiss6.m4a": "/Janna/static/media/kiss6.c2760e09.m4a",
+    "static/media/kiss7.m4a": "/Janna/static/media/kiss7.f253bbf0.m4a",
+    "static/media/kiss8.m4a": "/Janna/static/media/kiss8.8f1a8daa.m4a"
   },
   "entrypoints": [
     "static/js/runtime-main.79d48003.js",
-    "static/js/2.a3698491.chunk.js",
+    "static/js/2.daab43b5.chunk.js",
     "static/css/main.4117dc3b.chunk.css",
-    "static/js/main.0ee8ead0.chunk.js"
+    "static/js/main.eb9fe820.chunk.js"
   ]
 }
