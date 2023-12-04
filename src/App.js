@@ -88,8 +88,10 @@ function RatioTool() {
           <InputGroup.Text>%</InputGroup.Text>
         </InputGroup>
         <InputGroup className="mb-3">
-          <InputGroup.Text id="basic-addon1">會變成</InputGroup.Text>
-          <InputGroup.Text id="basic-addon1">
+          <InputGroup.Text style={{ background: "#EEEEEE" }}>
+            會變成
+          </InputGroup.Text>
+          <InputGroup.Text style={{ background: "#EEEEEE" }}>
             {Number.isFinite(newRawSnappedRatio)
               ? `1 : ${newRawSnappedRatio}`
               : ""}
@@ -97,20 +99,86 @@ function RatioTool() {
         </InputGroup>
         <hr />
         <InputGroup className="mb-3">
-          <InputGroup.Text id="basic-addon1">要變成</InputGroup.Text>
-          <InputGroup.Text id="basic-addon1">
+          <InputGroup.Text style={{ background: "#EEEEEE" }}>
+            要變成
+          </InputGroup.Text>
+          <InputGroup.Text style={{ background: "#EEEEEE" }}>
             {Number.isFinite(finalSnappedRatio)
               ? `1 : ${finalSnappedRatio}`
               : ""}
           </InputGroup.Text>
-          <InputGroup.Text id="basic-addon1">的話</InputGroup.Text>
+          <InputGroup.Text style={{ background: "#EEEEEE" }}>
+            的話
+          </InputGroup.Text>
         </InputGroup>
         <InputGroup className="mb-3" size="lg">
-          <InputGroup.Text>應該縮放</InputGroup.Text>
-          <InputGroup.Text>
-            <b>{answer || ""}</b>
+          <InputGroup.Text style={{ background: "#EEEEEE" }}>
+            應該縮放
           </InputGroup.Text>
-          <InputGroup.Text style={{ cursor: "pointer" }} onClick={handleCopy}>
+          <InputGroup.Text style={{ background: "#EEEEEE" }}>
+            <b>{answer || ""} %</b>
+          </InputGroup.Text>
+          <InputGroup.Text
+            style={{ cursor: "pointer", background: "#EEEEEE" }}
+            onClick={handleCopy}
+          >
+            <Scissors /> {copied ? "(已複製)" : ""}
+          </InputGroup.Text>
+        </InputGroup>
+      </Modal.Body>
+    </>
+  );
+}
+function RatioTool2() {
+  const [originalRatio, setOriginalRatio] = useState(1000);
+  const [newRatio, setNewRatio] = useState(200);
+  const [copied, setCopied] = useState(false);
+  const answer = useMemo(() => {
+    return _.round((originalRatio / newRatio) * 100, 4);
+  }, [originalRatio, newRatio]);
+  const handleCopy = () => {
+    navigator.clipboard.writeText(answer);
+    setCopied(true);
+  };
+
+  useEffect(() => {
+    setCopied(false);
+  }, [answer]);
+
+  return (
+    <>
+      <Modal.Header closeButton>
+        <Modal.Title>幾比幾～？!</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <InputGroup className="mb-3">
+          <InputGroup.Text>1 : </InputGroup.Text>
+          <Form.Control
+            value={originalRatio}
+            onChange={(v) => setOriginalRatio(v.target.value)}
+            type="number"
+          />
+        </InputGroup>
+        <InputGroup className="mb-3">
+          <InputGroup.Text>要變成 1 : </InputGroup.Text>
+          <Form.Control
+            value={newRatio}
+            onChange={(v) => setNewRatio(v.target.value)}
+            type="number"
+          />
+        </InputGroup>
+        <hr />
+        <InputGroup className="mb-3" size="lg">
+          <InputGroup.Text style={{ background: "#EEEEEE" }}>
+            應該縮放
+          </InputGroup.Text>
+          <InputGroup.Text style={{ background: "#EEEEEE" }}>
+            <b>{answer || ""} %</b>
+          </InputGroup.Text>
+          <InputGroup.Text
+            style={{ cursor: "pointer", background: "#EEEEEE" }}
+            onClick={handleCopy}
+          >
             <Scissors /> {copied ? "(已複製)" : ""}
           </InputGroup.Text>
         </InputGroup>
@@ -122,7 +190,6 @@ function RatioTool() {
 function App() {
   const [isActive, setActive] = useState(false);
   const handleHeartClick = () => {
-    playRandomAudio();
     setActive(true);
 
     setTimeout(() => {
@@ -130,17 +197,28 @@ function App() {
     }, 1000);
   };
   const classNames = ["heart", isActive ? "heart-active" : ""];
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(null);
 
   return (
     <div className="App">
       <header className="App-header">
         <div className={classNames.join(" ")} onClick={handleHeartClick}></div>
-        <Button variant="primary" onClick={() => setShowModal(true)}>
+        <Button variant="primary" onClick={() => setShowModal(1)}>
           幾比幾～？
         </Button>
-        <Modal show={showModal} size="lg" onHide={() => setShowModal(false)}>
-          <RatioTool />
+        <Button
+          variant="primary"
+          onClick={() => setShowModal(2)}
+          style={{ marginTop: 5 }}
+        >
+          幾比幾～？!
+        </Button>
+        <Modal
+          show={showModal !== null}
+          size="lg"
+          onHide={() => setShowModal(null)}
+        >
+          {showModal === 1 ? <RatioTool /> : <RatioTool2 />}
         </Modal>
 
         <div className="made-for">Made for my love Janna</div>
