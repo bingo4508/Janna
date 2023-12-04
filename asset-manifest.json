@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Janna/static/css/main.1c6aa5b2.css",
-    "main.js": "/Janna/static/js/main.f1696cc1.js",
+    "main.js": "/Janna/static/js/main.6c66bf7f.js",
     "static/media/kiss8.m4a": "/Janna/static/media/kiss8.47ad05a659643dc0a13d.m4a",
     "static/media/kiss7.m4a": "/Janna/static/media/kiss7.26201d2ed4669a2e1e34.m4a",
     "static/media/kiss6.m4a": "/Janna/static/media/kiss6.e0d593350c6e56347ad8.m4a",
@@ -12,10 +12,10 @@
     "static/media/kiss5.m4a": "/Janna/static/media/kiss5.29216ce17441d9ccb0f7.m4a",
     "index.html": "/Janna/index.html",
     "main.1c6aa5b2.css.map": "/Janna/static/css/main.1c6aa5b2.css.map",
-    "main.f1696cc1.js.map": "/Janna/static/js/main.f1696cc1.js.map"
+    "main.6c66bf7f.js.map": "/Janna/static/js/main.6c66bf7f.js.map"
   },
   "entrypoints": [
     "static/css/main.1c6aa5b2.css",
-    "static/js/main.f1696cc1.js"
+    "static/js/main.6c66bf7f.js"
   ]
 }
